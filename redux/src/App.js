@@ -1,13 +1,15 @@
 
 import { useSelector } from 'react-redux';
 import './App.css';
+import ListTask from './Components/ListTask';
+import Addtask from './Components/Addtask';
 
 function App() {
-  const data=useSelector(state=>state.todo)
-  console.log(data)
+  
   return (
     <div className="App">
-    
+    <Addtask />
+    <ListTask />
     </div>
   );
 }

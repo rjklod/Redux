@@ -6,7 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.box-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
