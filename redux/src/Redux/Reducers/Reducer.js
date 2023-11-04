@@ -1,4 +1,4 @@
-import { ADD } from "../Const/Const"
+import { ADD, Search } from "../Const/Const"
 
 
 
@@ -16,7 +16,8 @@ export const todoReducer=(state=initialState,action)=>{
 switch (action.type) {
      case ADD:
         return {...state,todo:[...state.todo,{...action.payload,id:state.todo.length+1}]}
-
+   case Search:
+       return {...state,todo:[state.todo.filter(el=>el.isDone==true)]}
         default:
 return state
  }
